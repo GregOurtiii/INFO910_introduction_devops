@@ -1,0 +1,18 @@
+version: "3"
+services:
+  monclient:
+    container_name: imageclient
+    build: ./client
+    depends_on:
+      - monserveur
+    networks:
+      - monreseau
+  monserveur:
+    container_name: imageserveur
+    build: ./serveur
+    ports:
+      - "5000:5000"
+    networks:
+      - monreseau
+networks:
+  monreseau:

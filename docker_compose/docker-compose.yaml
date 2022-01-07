@@ -1,0 +1,20 @@
+version: "3"
+services:
+  monclient:
+    image: "ourtiii/docker_client:latest"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - monserveur
+    networks:
+      - monreseau
+  monserveur:
+    image: "ourtiii/docker_server:latest"
+    stdin_open: true
+    tty: true
+    ports:
+      - "5000:5000"
+    networks:
+      - monreseau
+networks:
+  monreseau:
