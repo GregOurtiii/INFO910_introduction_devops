@@ -4,13 +4,13 @@
 
 L'application est une application de gestion de produits d'une base de données
 Elle permet à partir d'un client, d'interagir avec un serveur (qui sert de base de données)
-et propose les fonctionnalités classiques d'une base de données :
+et propose les fonctionnalitées classiques d'une base de données :
 
 ## Récupération du projet
 
 Cloner le projet avec git avec la commande :
 `git clone https://github.com/GregOurtiii/INFO910_introduction_devops.git`
-Vous retrouverz les sources du client et du serveur python dans le dossier src.
+Vous retrouverez les sources du client et du serveur python dans le dossier src.
 Les fichiers .yaml pour Docker compose dans le fichier docker_compose.
 Les fichiers .yaml pour Kubernetes dans le fichier kubernetes.
 
@@ -60,7 +60,7 @@ Une fois le client lancé, vous aurez le choix entre 5 action:
 
 Chaque produit dispose d'un id, d'un nom et d'un prix
 
-## Auteurs:
+## Auteurs :
 
 BILLON Yohan
 CLERC Gregory
